@@ -1,0 +1,452 @@
+﻿<Window x:Class="Conecta4.Juego"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Conecta4"
+        mc:Ignorable="d"
+        Title="Juego" Height="432" Width="638">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/backgroundBlue.jpg"/>
+        </Grid.Background>
+        <Rectangle x:Name="CapaTablero" HorizontalAlignment="Left" Height="401" Stroke="Black" VerticalAlignment="Top" Width="755" Opacity="0.945" Margin="0,0,-125,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/taberol.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="Sombras" HorizontalAlignment="Left" Height="401" Stroke="Black" VerticalAlignment="Top" Width="755" Margin="0,0,-125,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/sombras.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR05" HorizontalAlignment="Left" Height="60" Margin="87,74,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323" Opacity="0.96">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR04" HorizontalAlignment="Left" Height="60" Margin="87,123,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR03" HorizontalAlignment="Left" Height="60" Margin="87,171,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR02" HorizontalAlignment="Left" Height="60" Margin="87,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR01" HorizontalAlignment="Left" Height="60" Margin="87,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR00" HorizontalAlignment="Left" Height="60" Margin="87,318,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR10" HorizontalAlignment="Left" Height="60" Margin="153,318,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR20" HorizontalAlignment="Left" Height="60" Margin="219,318,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR30" HorizontalAlignment="Left" Height="60" Margin="284,318,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR40" HorizontalAlignment="Left" Height="60" Margin="350,318,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR50" HorizontalAlignment="Left" Height="60" Margin="415,318,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR60" HorizontalAlignment="Left" Height="60" Margin="481,318,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR11" HorizontalAlignment="Left" Height="60" Margin="152,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR12" HorizontalAlignment="Left" Height="60" Margin="153,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR13" HorizontalAlignment="Left" Height="60" Margin="153,171,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR14" HorizontalAlignment="Left" Height="60" Margin="152,123,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR15" HorizontalAlignment="Left" Height="60" Margin="152,74,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR21" HorizontalAlignment="Left" Height="60" Margin="219,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR22" HorizontalAlignment="Left" Height="60" Margin="219,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR23" HorizontalAlignment="Left" Height="60" Margin="219,171,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR24" HorizontalAlignment="Left" Height="60" Margin="219,123,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR25" HorizontalAlignment="Left" Height="60" Margin="219,74,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR31" HorizontalAlignment="Left" Height="60" Margin="284,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR32" HorizontalAlignment="Left" Height="60" Margin="284,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR33" HorizontalAlignment="Left" Height="60" Margin="284,171,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR34" HorizontalAlignment="Left" Height="60" Margin="284,123,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR35" HorizontalAlignment="Left" Height="60" Margin="284,74,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR41" HorizontalAlignment="Left" Height="60" Margin="350,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR42" HorizontalAlignment="Left" Height="60" Margin="350,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR43" HorizontalAlignment="Left" Height="60" Margin="350,171,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR44" HorizontalAlignment="Left" Height="60" Margin="350,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR45" HorizontalAlignment="Left" Height="60" Margin="350,74,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR51" HorizontalAlignment="Left" Height="60" Margin="416,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR52" HorizontalAlignment="Left" Height="60" Margin="416,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR53" HorizontalAlignment="Left" Height="60" Margin="416,171,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR54" HorizontalAlignment="Left" Height="60" Margin="416,123,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR55" HorizontalAlignment="Left" Height="60" Margin="415,74,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR61" HorizontalAlignment="Left" Height="60" Margin="481,269,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR62" HorizontalAlignment="Left" Height="60" Margin="481,219,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR63" HorizontalAlignment="Left" Height="60" Margin="481,171,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR64" HorizontalAlignment="Left" Height="60" Margin="481,123,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FR65" HorizontalAlignment="Left" Height="60" Margin="481,74,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaRoja.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA00" HorizontalAlignment="Left" Height="50" Margin="91,321,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA01" HorizontalAlignment="Left" Height="50" Margin="91,273,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA02" HorizontalAlignment="Left" Height="50" Margin="91,223,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA03" HorizontalAlignment="Left" Height="50" Margin="91,174,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA04" HorizontalAlignment="Left" Height="50" Margin="91,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA05" HorizontalAlignment="Left" Height="50" Margin="91,77,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA20" HorizontalAlignment="Left" Height="50" Margin="223,321,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA21" HorizontalAlignment="Left" Height="50" Margin="222,273,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA22" HorizontalAlignment="Left" Height="50" Margin="222,223,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA23" HorizontalAlignment="Left" Height="50" Margin="222,174,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA24" HorizontalAlignment="Left" Height="50" Margin="222,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA25" HorizontalAlignment="Left" Height="50" Margin="222,77,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA30" HorizontalAlignment="Left" Height="50" Margin="289,321,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA31" HorizontalAlignment="Left" Height="50" Margin="289,273,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA32" HorizontalAlignment="Left" Height="50" Margin="289,223,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA33" HorizontalAlignment="Left" Height="50" Margin="289,174,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA34" HorizontalAlignment="Left" Height="50" Margin="289,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA35" HorizontalAlignment="Left" Height="50" Margin="289,77,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA40" HorizontalAlignment="Left" Height="50" Margin="354,321,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA41" HorizontalAlignment="Left" Height="50" Margin="354,273,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA42" HorizontalAlignment="Left" Height="50" Margin="354,223,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA43" HorizontalAlignment="Left" Height="50" Margin="354,174,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA44" HorizontalAlignment="Left" Height="50" Margin="354,125,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA45" HorizontalAlignment="Left" Height="50" Margin="354,77,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA10" HorizontalAlignment="Left" Height="50" Margin="157,321,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA11" HorizontalAlignment="Left" Height="50" Margin="156,273,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA12" HorizontalAlignment="Left" Height="50" Margin="157,223,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA13" HorizontalAlignment="Left" Height="50" Margin="157,174,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA14" HorizontalAlignment="Left" Height="50" Margin="156,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA15" HorizontalAlignment="Left" Height="50" Margin="156,77,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA50" HorizontalAlignment="Left" Height="50" Margin="420,321,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA51" HorizontalAlignment="Left" Height="50" Margin="420,273,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA52" HorizontalAlignment="Left" Height="50" Margin="421,223,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA53" HorizontalAlignment="Left" Height="50" Margin="421,174,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA54" HorizontalAlignment="Left" Height="50" Margin="421,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA55" HorizontalAlignment="Left" Height="50" Margin="420,77,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA60" HorizontalAlignment="Left" Height="50" Margin="485,321,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA61" HorizontalAlignment="Left" Height="50" Margin="485,272,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA62" HorizontalAlignment="Left" Height="50" Margin="485,222,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA63" HorizontalAlignment="Left" Height="50" Margin="485,174,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA64" HorizontalAlignment="Left" Height="50" Margin="485,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FA65" HorizontalAlignment="Left" Height="50" Margin="485,77,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" StrokeThickness="0" RenderTransformOrigin="0.932,0.323">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/FichaAmarilla.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="bt1" Content="Linea 1" HorizontalAlignment="Left" Margin="91,37,0,0" VerticalAlignment="Top" Width="48" Height="30" FontFamily="Impact" FontSize="15" Background="#FF56D9FF" Foreground="#FF0A0A0A" BorderBrush="White" Click="bt1_Click"/>
+        <Button x:Name="bt2" Content="Linea 2" HorizontalAlignment="Left" Margin="156,37,0,0" VerticalAlignment="Top" Width="48" Height="30" FontFamily="Impact" FontSize="15" Background="#FF56D9FF" Foreground="#FF0A0A0A" BorderBrush="White" Click="bt2_Click"/>
+        <Button x:Name="bt3" Content="Linea 3" HorizontalAlignment="Left" Margin="223,37,0,0" VerticalAlignment="Top" Width="48" Height="30" FontFamily="Impact" FontSize="15" Background="#FF56D9FF" Foreground="#FF0A0A0A" BorderBrush="White" Click="bt3_Click"/>
+        <Button x:Name="bt4" Content="Linea 4" HorizontalAlignment="Left" Margin="290,37,0,0" VerticalAlignment="Top" Width="48" Height="30" FontFamily="Impact" FontSize="15" Background="#FF56D9FF" Foreground="#FF0A0A0A" BorderBrush="White" Click="bt4_Click"/>
+        <Button x:Name="bt5" Content="Linea 5" HorizontalAlignment="Left" Margin="356,37,0,0" VerticalAlignment="Top" Width="48" Height="30" FontFamily="Impact" FontSize="15" Background="#FF56D9FF" Foreground="#FF0A0A0A" BorderBrush="White" Click="bt5_Click"/>
+        <Button x:Name="bt6" Content="Linea 6" HorizontalAlignment="Left" Margin="423,37,0,0" VerticalAlignment="Top" Width="48" Height="30" FontFamily="Impact" FontSize="15" Background="#FF56D9FF" Foreground="#FF0A0A0A" BorderBrush="White" Click="bt6_Click"/>
+        <Button x:Name="bt7" Content="Linea 7" HorizontalAlignment="Left" Margin="489,37,0,0" VerticalAlignment="Top" Width="48" Height="30" FontFamily="Impact" FontSize="15" Background="#FF56D9FF" Foreground="#FF0A0A0A" BorderBrush="White" Click="bt7_Click"/>
+
+    </Grid>
+</Window>
